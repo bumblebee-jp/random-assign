@@ -1,8 +1,8 @@
-const membersList = ['Makoto', 'Hiro', 'Philip', 'Iwasaki'];
+const membersList = ['Makoto', 'Hiro', 'Philip', 'Iwasaki', 'Aki', 'Masayuki'];
 
-const randomNumber = (min: number, max: number): number => {
-    return Math.floor(Math.random() * (max - min) + min);
+const randomNumber = (max: number): number => {
+    return Math.floor(Math.random() * max);
 };
 
-const memberID = randomNumber(0, membersList.length);
+const memberID = randomNumber(membersList.length);
 console.log('Next is ', membersList[memberID]);
