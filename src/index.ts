@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const membersList = ['Makoto', 'Hiro', 'Philip', 'Iwasaki', 'Aki', 'Masayuki'];
 
 const randomNumber = (max: number): number => {
