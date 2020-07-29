@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const membersList = ['Makoto', 'Hiro', 'Philip', 'Iwasaki', 'Aki', 'Masayuki'];
+const membersList: string[] = process.argv[2].split(',');
 
 const randomNumber = (max: number): number => {
     return Math.floor(Math.random() * max);
