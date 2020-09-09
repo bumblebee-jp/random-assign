@@ -1,33 +1,23 @@
-# typescript-node-jest-eslint-vscode
+# random-assign
 
-Project template for
-- typescript
-- node.js
-- jest
-- eslint
-- vscode
+Assigning one member randomly
+
 
 ## Usage
 
 ```
-npm install
+# How to install
+npm install -g random-assign
+```
 
-# run index.ts by ts-node
-npm start
+```
+# Run
+random-assign Makoto,Hiro,Iwasaki
 
-# test by jest
-npm run test
-
-# compile src/*.ts to dist/
-npm run build
+# Result
+Next is  Hiro
 ```
 
 
-## vscode
 
-Debug configurations
-- Debug Jest Tests
-    - for testing src/__test__/**/*.ts
-- Debug Program
-    - for debugging src/index.ts 
 
