@@ -6,6 +6,9 @@
     "bin": {
         "random-assign": "./dist/index.js"
     },
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "clean": "rm -rf coverage dist",
         "lint": "eslint ./src/*.ts",
