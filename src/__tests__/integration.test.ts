@@ -7,6 +7,7 @@ describe('Happy path test', () => {
     });
 
     it('should be selected people based on second argument', () => {
+        expect('Hello').toEqual('Good Bye');
     });
 
     it('should fail', () => {
