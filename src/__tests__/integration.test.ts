@@ -6,5 +6,7 @@ describe('Happy path test', () => {
         expect(['Makoto', 'Hiro', 'Iwasaki']).toEqual(expect.arrayContaining(next(argumentArray)));
     });
 
-    it('should be selected people based on second argument', () => {});
+    it('should be selected people based on second argument', () => {
+        expect('aaa').toEqual('bbb');
+    });
 });
