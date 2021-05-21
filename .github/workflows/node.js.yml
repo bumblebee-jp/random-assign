@@ -31,7 +31,9 @@ jobs:
               run: npm test
             - name: Post result if tests success
               if: success()
-　            run: curl -X POST --data-urlencode 'payload={"text": "*Test Success* :+1: : ${{env.commitmsg}}"}' ${{secrets.SLACK_WEBHOOK_URL}}
+              run: |
+                  curl -X POST --data-urlencode 'payload={"text": "*Test Success* :+1: : ${{ env.commitmsg }}"}' ${{secrets.SLACK_WEBHOOK_URL}}
             - name: Post result if tests failure
               if: failure()
-              run: curl -X POST --data-urlencode 'payload={"text": "*Test Failed* :fire: : ${{ env.commitmsg }}"}' ${{secrets.SLACK_WEBHOOK_URL}}
+              run: |
+                  curl -X POST --data-urlencode 'payload={"text": "*Test Failed* :fire: : ${{ env.commitmsg }}"}' ${{secrets.SLACK_WEBHOOK_URL}}
