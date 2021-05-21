@@ -23,6 +23,11 @@ jobs:
               uses: actions/setup-node@v2
               with:
                   node-version: ${{ matrix.node-version }}
+            - name: get commit message one line
+              env:
+                  ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+              run: |
+                  echo ::set-env name=commitmsg::$(echo "${{github.event.head_commit.message}}" | head -1)
             - name: Install Dependencies
               run: npm ci
             - name: Build
