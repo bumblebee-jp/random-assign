@@ -1,7 +1,7 @@
 {
     "name": "random-assign",
     "version": "1.0.0",
-    "description": "assigning one member randomly",
+    "description": "assigning member(s) randomly",
     "main": "./dist/index.js",
     "bin": {
         "random-assign": "./dist/index.js"
@@ -17,27 +17,25 @@
         "start": "ts-node src/index.ts"
     },
     "keywords": [
-        "typescript",
-        "jest",
-        "eslint",
-        "node",
-        "vscode"
+        "random",
+        "assign",
+        "member",
+        "select"
     ],
     "dependencies": {},
     "devDependencies": {
-        "@types/jest": "^25.1.3",
-        "@types/node": "^13.13.14",
-        "@typescript-eslint/eslint-plugin": "^2.21.0",
-        "@typescript-eslint/parser": "^2.21.0",
-        "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.11.0",
-        "eslint-plugin-prettier": "^3.1.4",
-        "jest": "^25.5.4",
-        "nodemon": "^2.0.4",
-        "prettier": "^1.19.1",
-        "ts-jest": "^25.2.1",
-        "ts-node": "^8.10.2",
-        "typescript": "^3.9.7"
+        "@types/jest": "^27.0.1",
+        "@types/node": "^16.6.2",
+        "@typescript-eslint/eslint-plugin": "^4.29.2",
+        "@typescript-eslint/parser": "^4.29.2",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "jest": "^27.0.6",
+        "prettier": "^2.3.2",
+        "ts-jest": "^27.0.5",
+        "ts-node": "^10.2.1",
+        "typescript": "^4.3.5"
     },
     "author": "Hiroki Iwasaki",
     "license": "MIT",
