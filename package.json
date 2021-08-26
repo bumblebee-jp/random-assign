@@ -14,7 +14,8 @@
         "lint": "eslint ./src/*.ts",
         "test": "jest",
         "build": "tsc",
-        "start": "ts-node src/index.ts"
+        "start": "ts-node src/index.ts",
+        "format": "prettier-eslint --write $PWD/'**/*.ts'"
     },
     "keywords": [
         "random",
@@ -33,6 +34,8 @@
         "eslint-plugin-prettier": "^3.4.0",
         "jest": "^27.0.6",
         "prettier": "^2.3.2",
+        "prettier-eslint": "^13.0.0",
+        "prettier-eslint-cli": "^5.0.1",
         "ts-jest": "^27.0.5",
         "ts-node": "^10.2.1",
         "typescript": "^4.3.5"
