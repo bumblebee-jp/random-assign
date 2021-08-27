@@ -1,6 +1,6 @@
 {
     "name": "random-assign",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "assigning member(s) randomly",
     "main": "./dist/index.js",
     "bin": {
